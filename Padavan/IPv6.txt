@@ -1,0 +1,8 @@
+### napt66 rules
+ip6tables -F
+ip6tables -P INPUT ACCEPT
+ip6tables -P FORWARD ACCEPT
+ip6tables -P OUTPUT ACCEPT
+
+### start napt66 module
+modprobe napt66 wan_if=apcli0
